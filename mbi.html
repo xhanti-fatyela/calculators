@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mbi-style.css">
+    <script src="mib-script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <title>mbi-calculator</title>
+</head>
+<body>
+    <H1>BMI CALCULATOR</H1>
+<div id="scale_main">
+  <div id="scale_display">
+        <h2 id="range" class="neutral">Enter Measurements</h2>
+        <h3 id="bmi" >--.--</h3>
+        <div id="needle">
+        </div>
+        <div id="needle_bottom">
+        </div>
+      </div>
+  
+    <div class="measurement" id="height">
+        <h4>Height</h4>
+        
+        <input class="input" type="text" id="height_input" name="height"            required></input>
+      <span class="unit">Inches</span>
+   </div>
+   <div class="measurement" id="weight">
+        <h4>Weight</h4>
+        <input class="input" type="text" id="weight_input" name="weight" required></input>
+        <span class="unit">Pounds</span>
+   </div>
+ 
+      <div>
+        <button id="calculate" onclick="calculate(document.getElementById('height_input').value, document.getElementById('weight_input').value)">CALCULATE</button>
+        <button id="clear" onclick="clear_calculator()">CLEAR</button>
+  </div>
+  
+ </div>
+</body>
+</html>
